@@ -137,6 +137,10 @@ main {
     align-items: center;
 }
 
+.menu__item > a > span {
+    margin-right: 0.3rem;
+}
+
 hr {
     border: 0;
     border-bottom: 1px solid #000;
@@ -158,20 +162,20 @@ fieldset > input {
     border-radius: 2px;
 }
 
-input#item {
+input#inputCodeProductOrder {
     width: 3rem;
     margin-left: 3px;
 }
 
-input#description {
+input#inputNameProductOrder {
     width: 12rem;
 }
 
-input#price {
+input#inputPriceProductOrder {
     width: 7rem;
 }
 
-input#quantity {
+input#inputquantityOrder {
     width: 7rem;
 }
 
@@ -199,4 +203,12 @@ th {
     font-weight: bold;
     color: #004a8b;
     margin: 0 0 0.2rem 0;
+}
+
+#totalOrder {
+    font-size: 1.5rem;
+    color: rgb(173, 0, 0);
+    background-color: #b4b4b4;
+    align-self: flex-end;
+    padding: 0.2rem;
 }

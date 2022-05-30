@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+@48,400,0,0"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+@20..48,100..700,0..1,-50..200"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD
+@48,400,0,0"
+        />
+        <link rel="stylesheet" href="./assets/css/panel.css" />
+        <title>Painel - FlashJS</title>
+        <script type="module" src="./assets/js/panel.js" defer></script>
+    </head>
+    <body>
+        <aside class="menu">
+            <nav>
+                <ul>
+                    <li class="menu__item" data-action="client">
+                        <a
+                            ><span class="material-symbols-outlined">
+                                group_add</span
+                            >Clientes</a
+                        >
+                    </li>
+                    <li class="menu__item" data-action="product">
+                        <a
+                            ><span class="material-symbols-outlined">
+                                redeem </span
+                            >Produtos</a
+                        >
+                    </li>
+                    <li class="menu__item" data-action="order">
+                        <a
+                            ><span class="material-symbols-outlined">
+                                shopping_cart </span
+                            >Pedidos</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="form" id="client">
+                <header class="form__header">
+                    <h1>Clientes</h1>
+                    <span>x</span>
+                </header>
+                <form id="formClient">
+                    <label class="form__label" for="inputCodeClient"
+                        >Código</label
+                    >
+                    <input
+                        class="form__input"
+                        type="number"
+                        id="inputCodeClient"
+                        readonly
+                    />
+
+                    <label class="form__label" for="inputNameClient"
+                        >Nome</label
+                    >
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="inputNameClient"
+                        required
+                    />
+
+                    <label class="form__label" for="inputDateClient"
+                        >Data de cadastro</label
+                    >
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="inputDateClient"
+                        readonly
+                    />
+                    <div class="form__container">
+                        <div>
+                            <button
+                                class="form__button form__button-nav button__client"
+                                value="<"
+                            >
+                                &lt;
+                            </button>
+                            <button
+                                class="form__button form__button-nav button__client"
+                                value=">"
+                            >
+                                &gt;
+                            </button>
+                        </div>
+                        <div>
+                            <button
+                                class="form__button form__button-new button__client"
+                                value="Novo"
+                            >
+                                Novo
+                            </button>
+                            <button
+                                class="form__button form__button-save button__client"
+                                value="Salvar"
+                            >
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="form" action="" id="product">
+                <header class="form__header">
+                    <h1>Produtos</h1>
+                    <span>x</span>
+                </header>
+                <form action="" id="formProduct">
+                    <label class="form__label" for="inputCodeProduct"
+                        >Código</label
+                    >
+                    <input
+                        class="form__input"
+                        type="number"
+                        id="inputCodeProduct"
+                        readonly
+                    />
+
+                    <label class="form__label" for="inputDescriptionProduct"
+                        >Descrição</label
+                    >
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="inputDescriptionProduct"
+                        required
+                    />
+
+                    <label class="form__label" for="inputPriceProduct"
+                        >Preço</label
+                    >
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="inputPriceProduct"
+                        required
+                    />
+
+                    <label class="form__label" for="inputAmountProduct"
+                        >Quantidade</label
+                    >
+                    <input
+                        class="form__input"
+                        type="number"
+                        id="inputAmountProduct"
+                        required
+                    />
+
+                    <div class="form__container">
+                        <div>
+                            <button
+                                class="form__button form__button-nav button__product"
+                                value="<"
+                            >
+                                &lt;
+                            </button>
+                            <button
+                                class="form__button form__button-nav button__product"
+                                value=">"
+                            >
+                                &gt;
+                            </button>
+                        </div>
+                        <div>
+                            <button
+                                class="form__button form__button-new button__product"
+                                value="Novo"
+                            >
+                                Novo
+                            </button>
+                            <button
+                                class="form__button form__button-save button__product"
+                                value="Salvar"
+                            >
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="form form-order" id="order">
+                <header class="form__header">
+                    <h1>Pedidos</h1>
+                    <span>x</span>
+                </header>
+                <form action="" id="formOrder">
+                    <label class="form__label" for="inputCodeClientOrder"
+                        >Código do Cliente</label
+                    >
+                    <input
+                        class="form__input"
+                        type="number"
+                        id="inputCodeClientOrder"
+                    />
+
+                    <label class="form__label" for="inputNameClientOrder"
+                        >Cliente</label
+                    >
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="inputNameClientOrder"
+                        disabled
+                    />
+                    <hr />
+                    <label class="title">Localizar Produtos</label>
+                    <fieldset>
+                        <input
+                            type="number"
+                            id="inputCodeProductOrder"
+                            required
+                        />
+                        <input
+                            type="text"
+                            id="inputNameProductOrder"
+                            disabled
+                        />
+                        <input
+                            type="text"
+                            id="inputPriceProductOrder"
+                            disabled
+                        />
+                        <input type="text" id="inputquantityOrder" required />
+                        <button>Lançar no Pedido</button>
+                    </fieldset>
+                    <hr />
+                </form>
+                <h3 class="title">Itens do Pedido</h3>
+                <table id="tableOrder">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Descrição</th>
+                            <th>Preço</th>
+                            <th>Qtd</th>
+                            <th>Sub Total</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <span id="totalOrder"></span>
+            </section>
+        </main>
+    </body>
+</html>
